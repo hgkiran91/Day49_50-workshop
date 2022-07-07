@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/addressBook_form.css">
+    <title>Address Book Form</title>
+    <script src="../js/addressBook_form.js"></script>
+    <script src="../js/addressbook.js"></script>
+</head>
+<body>
+    <!--UC 1-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img class="logo-content-img" src="/images/images.png" alt="" >
+            <div class="logo-content-div">
+                <span class="addr-text">ADDRESS</span>
+                <span class="addr-text addr-book">BOOK</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save();return false" >
+            <div class="outer-form-head">
+                <div class="form-head" >PERSON ADDRESS FORM
+                    <a href="" class="cancel-button"><img src="../images/download3.png" height="20%" width="22%" alt=""></a>
+                </div>
+            </div>
+            <div class="input-feilds">
+            <div class="form-input">
+            <label class="label-text" for="name">Full Name</label>
+            <div class="row-content">
+                <input class="input" type="text" id="name" name="Name" placeholder="Your name.." required>
+                <error-output class="name-error" for="text"></error-output>
+            </div>
+            </div>
+            <div class="form-input">
+            <label class="label-text" for="phoneNumber">Phone Number</label>
+            <div class="row-content">
+                <input class="input" type="text" name="phoneNumber" id="phoneNumber">
+                <error-output class="error-output" for="text"></error-output>
+            </div>
+            </div>
+            <div class="form-input">
+            <label class="label-text" for="address">Address</label>
+            <div class="row-content">
+                <textarea class="input" type="text" name="address" id="address">
+                <error-output class="error-output" for="text"></error-output>
+            </div>
+            </div>
+            </div>
+
+            <div class="input-content">
+                    <label class="label-text" for="city">City</label>
+                    <div class="field-content">
+                        <select class="input" name="City" id="city">
+                            <option value="">Select City</option>
+                            <option value="bangalore">Banglore</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="pune">Pune</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+                    <label class="label-text" for="state">State</label>
+                    <div class="field-content">
+                        <select class="input" name="State" id="state">
+                            <option value="">Select State</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <!-- <option value="maharashtra">Maharashtra</option> -->
+                            <option value="tamilnadu">TamilNadu</option>
+                            <option value="andrapradesh">AndraPradesh</option>
+                        </select>
+                    </div>
+                    <label class="label-text" for="zipCode">ZipCode</label>
+                    <div class="field-content">
+                    <input class="input" type="number" id="zipCode" name="ZipCode" placeholder="Zip Code">
+                    </div>
+            </div>
+
+            <div class="button-content">
+                <!-- <a href="./home.html" class="resetButton button cancelButton">Cancel</a> -->
+                  <button type="add" class="button addButton" id="addButton">Add</button>
+                  <button type="reset" class="resetButton button">Reset</button> 
+            </div>
+
+        </form>
+
+        
+    </div>
+    
+</body>
+</html>
